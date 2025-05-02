@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Menú Hamburguesa -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  justify-content: space-between;
+}
+
+.menu-icon span {
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+body {    
+  height: 100vh;    
+}
+  
+  /* Navbar ------------------SimioAstuto® by Norberto Rodríguez ------------------------------- */
+  .navbar { 
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 1);
+    top: 0;
+    left: 0;
+    z-index: 100;    
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;    
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #dff800;
+}
+  
+  /* Contacto ------------------SimioAstuto® by Norberto Rodríguez ------------------------------- */
+  .contacto {
+    background: url(../assets/img/wall.png) no-repeat center center/cover;
+    padding: 60px 20px 100px;
+    text-align: center;
+  }
+  
+  .contacto h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .intro-contacto {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    font-style: italic;
+    color: #e0e0e0;
+  }
+  
+  /* Formulario ------------------SimioAstuto® by Norberto Rodríguez ------------------------------- */
+  .formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    color: #000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formulario-contacto label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+  }
+  
+  .formulario-contacto textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .boton-enviar {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-enviar:hover {
+    background-color: #333;
+  }
+  
+  /* Información adicional ------------------SimioAstuto® by Norberto Rodríguez ------------------------------- */
+  .info-contacto {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .info-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .info-item h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Sobre contacto ------------------SimioAstuto® by Norberto Rodríguez ------------------------------- */
+  .sobre-contacto {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px solid #8c00ff;
+  }
+  
+  .sobre-contacto h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .sobre-contacto p {
+    max-width: 800px;
+    margin: auto;
+    font-style: italic;
+    color: #ddd;
+    font-size: 18px;
+  }
+  
+  /* Footer ------------------SimioAstuto® by Norberto Rodríguez ------------------------------- */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #aaa;
+  }
+
+  .icono-direccion {
+    align-items: center;
+    color: white;
+  }
+  
+  /* Media Queries ------------------SimioAstuto® by Norberto Rodríguez ------------------------------- */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .menu-icon {
+      display: flex;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+}
+
+.navbar {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+}
+    nav ul {
+      gap: 10px;
+    }
+  
+    .formulario-contacto {
+      padding: 20px;
+    }
+  
+    .info-contacto {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-item {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+
+  @media (max-width: 500px){
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    nav ul {
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 375px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .contenedor-presentacion h2 {
+        font-size: 24px;
+    }
+
+    .contenedor-presentacion p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

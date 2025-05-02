@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Menú Hamburguesa -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    justify-content: space-between;
+}
+
+.menu-icon span {
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+body {    
+    height: 100vh;    
+}
+/* Navbar -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.navbar { 
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 1);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;    
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #dff800;
+}
+
+/* Presentación -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.presentacion {    
+    padding: 100px 20px;
+    background: url(../assets/img/wall.png);
+    background-size: cover;  
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: italic; 
+}
+
+.contenedor-presentacion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contenedor-presentacion h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.contenedor-presentacion p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Productos -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.productos {
+    padding: 30px 20px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.productos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.producto-card {    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 212.5px;
+    height: 400px;
+    animation: bounceIn 0.8s ease-out;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.producto-card img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.producto-card:hover {
+    background-color: #ffffff;
+    transform: translateY(-16px);
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    70% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.producto-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.producto-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.producto-card ul {
+    list-style-type: none;
+    font-size: 16px;
+    padding-left: 0;
+}
+
+.producto-card ul li {
+    margin-bottom: 5px;
+}
+
+.producto-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto-card .btn-ver-mas {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* Galería -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.galeria {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-family: "Lato", sans-serif;
+}
+
+.galeria h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 700;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.galeria-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.galeria-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.galeria-itemL {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
+}
+
+.galeria-itemL img {
+    width: 100%;
+    padding: 100px;
+    display: block;
+    border-radius: 10px;
+}
+
+.galeria-itemL:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #aaa;
+    font-family: "Lato", sans-serif;  
+  }
+/* Media Queries -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    
+      nav ul {        
+        gap: 10px;
+      }
+
+    .contenedor-presentacion h2 {
+        font-size: 28px;
+    }
+
+    .contenedor-presentacion p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .producto-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .producto-card h3,
+    .producto-card p {
+        font-size: 16px;
+    }
+
+    .galeria-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .galeria-itemL img {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    nav ul {
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    nav ul {
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .contenedor-presentacion h2 {
+        font-size: 24px;
+    }
+
+    .contenedor-presentacion p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .producto-card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .producto-card img {
+        height: 160px;
+    }
+
+    .producto-card h3 {
+        font-size: 20px;
+    }
+
+    .producto-card p,
+    .producto-card .btn-ver-mas {
+        font-size: 14px;
+    }
+
+    .galeria h2 {
+        font-size: 28px;
+    }
+
+    .galeria-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .galeria-itemL img {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        top: 60px;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+} 
+

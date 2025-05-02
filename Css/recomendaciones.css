@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menú Hamburguesa -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    justify-content: space-between;
+}
+
+.menu-icon span {
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+body {    
+    height: 100vh;    
+}
+
+body {
+    height: 100vh;
+}
+
+/* Navbar -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.navbar { 
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 1);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;    
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #dff800;
+}
+
+/* Sobre Nosotros -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.recomendaciones {
+    padding: 80px 20px;
+    text-align: center;
+    background: url(../assets/img/wall.png);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.recomendaciones h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+.recomendaciones p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+}
+
+/* Tarjetas -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+.seccion-horizontal {
+    padding: 10px 600px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.seccion-horizontal h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: "Lato", sans-serif;
+}
+
+.tarjeta-horizontal {    
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: bounceIn 0.8s ease-out;
+    font-family: "Lato", sans-serif;
+}
+
+.tarjeta-horizontal img {
+    align-items: center;
+    height: 100%;
+    width: 800px;
+    max-width: 100%;   
+    
+}
+
+.contenido-horizontal {
+    padding: 20px;
+    text-align: left;
+}
+
+.contenido-horizontal h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.contenido-horizontal h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contenido-horizontal p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    70% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Footer -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #aaa;
+    font-family: "Lato", sans-serif;  
+}
+
+/* Media Queries -------------------------------SimioAstuto® by Norberto Rodríguez------------------------------- */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    
+      nav ul {
+        gap: 10px;
+      }
+
+    .recomendaciones h2,
+    .recomendaciones h2 {
+        font-size: 28px;
+    }
+
+    .sobre-nosotros p {
+        font-size: 16px;
+    }
+
+    .tarjeta-horizontal {
+        margin-bottom: 20px;
+    }
+
+    .contenido-horizontal h3,
+    .contenido-horizontal h4 {
+        font-size: 18px;
+    }
+
+    .contenido-horizontal p {
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    nav ul {
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .seccion-horizontal {
+        padding: 80px 5px;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+
+      .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+  }
+@media (max-width: 375px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        top: 60px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .contenedor-presentacion h2 {
+        font-size: 24px;
+    }
+
+    .contenedor-presentacion p {
+        font-size: 15px;
+        text-align: justify;
+    }
+      
+
+    footer {
+        font-size: 12px;
+    }
+}
