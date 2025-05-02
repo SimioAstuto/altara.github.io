@@ -20,21 +20,6 @@ Este proyecto se construyó **exclusivamente con las siguientes tecnologías bas
 
 **Esto significa que no se utilizaron frameworks, librerías de JavaScript ni backend para este trabajo práctico.**
 
-## Cómo Visualizar el Proyecto
-
-Para ver este proyecto en acción, puedes seguir estos pasos:
-
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone [https://github.com/SimioAstuto/nombre-de-tu-repositorio.git](https://github.com/SimioAstuto/nombre-de-tu-repositorio.git)
-    cd nombre-de-tu-repositorio
-    ```
-    *(Reemplaza `nombre-de-tu-repositorio` con el nombre real de tu repositorio en GitHub)*
-
-2.  **Abrir el archivo `index.html`**
-
-    * Simplemente haz doble clic en el archivo o arrástralo a la ventana de tu navegador.
-
 ## Funcionalidades utilizando HTML y CSS: 
 
 * Página de inicio con una introducción a la empresa (ficticia) estructurada con HTML y estilizada con CSS.
