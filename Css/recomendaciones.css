@@ -210,7 +210,7 @@ footer {
     }
 }
 
-@media (max-width: 635px) {
+@media (max-width: 601px) {
     header {
       flex-direction: column;
       align-items: flex-start;
