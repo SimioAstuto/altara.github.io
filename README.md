@@ -10,6 +10,12 @@ Esta página web está inspirada en una empresa de fertilización. El objetivo p
 
 Mi nombre es Norberto Rodríguez, aunque en el mundo digital me conozco como "SimioAstuto". Este proyecto marca mi debut en el desarrollo web, representando un paso importante en mi camino como Full Stack Developer.
 
+## Diseño Gráfico 
+
+Diseño de etiquetas: Adobe Illustrator - Adobe Photoshop 
+
+Diseño 3D: Modelado en Autodesk 3DS MAX - Maquetado Adobe Dimension 
+
 ## Tecnologías Utilizadas
 
 Este proyecto se construyó **exclusivamente con las siguientes tecnologías base de la web:**
