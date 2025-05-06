@@ -38,14 +38,40 @@
           <label for="nombre">Nombre y Apellido</label>
           <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo" />
         </div>
+      
         <div>
           <label for="email">Correo Electrónico</label>
           <input type="email" id="email" name="email" required placeholder="@email.com" />
         </div>
+      
         <div>
-          <label for="mensaje">Mensaje</label>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="+54 9 381 4780089" />
+        </div>
+      
+        <div>
+          <label for="motivo">Motivo del contacto</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Selecciona una opción</option>
+            <option value="consulta">Consulta general</option>
+            <option value="propuesta">Propuesta de trabajo</option>
+            <option value="soporte">Soporte técnico</option>
+          </select>
+        </div>
+      
+        <div>
+          <label>¿Deseas recibir novedades?</label>
+          <div style="display: flex; gap: 10px; padding-left: 230px;">
+            <label><input type="radio" name="novedades" value="si" required> Sí</label>
+            <label><input type="radio" name="novedades" value="no"> No</label>
+          </div>
+        </div>
+      
+        <div>
+          <label for="mensaje">Comentario</label>
           <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea>
         </div>
+      
         <button type="submit" class="boton-enviar">Enviar</button>
       </form>
 
@@ -58,7 +84,7 @@
         <div class="info-item">
           <i class="fas fa-phone icono"></i>
           <h3>Teléfono</h3>
-          <p>+54 9 381 4780405</p>
+          <p>+54 9 381 4780089</p>
         </div>
         <div class="info-item">
           <i class="fas fa-map-marker-alt icono"></i>
